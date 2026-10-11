@@ -63,7 +63,7 @@
                 <a href="#architecture" class="nav-link">Tech Stack</a>
                 <a href="#developer" class="nav-link">Creator</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="#releases" class="nav-link">Releases (v1.30)</a>
+                <a href="#releases" class="nav-link">Releases (v1.4.2)</a>
             </nav>
 
             <div class="nav-actions">
@@ -101,7 +101,7 @@
             <a href="#architecture" class="drawer-link"><i class="fa-solid fa-layer-group"></i> Architecture</a>
             <a href="#developer" class="drawer-link"><i class="fa-solid fa-user-astronaut"></i> Creator Bio</a>
             <a href="#faq" class="drawer-link"><i class="fa-solid fa-circle-question"></i> FAQ & Guide</a>
-            <a href="#releases" class="drawer-link"><i class="fa-solid fa-code-branch"></i> Releases (v1.30)</a>
+            <a href="#releases" class="drawer-link"><i class="fa-solid fa-code-branch"></i> Releases (v1.4.2)</a>
         </div>
         <div class="drawer-actions">
             <a href="https://vibentra.vercel.app/" target="_blank" rel="noopener noreferrer"
@@ -109,7 +109,7 @@
                 <i class="fa-solid fa-globe"></i> Launch Web App
             </a>
             <a href="vibentra.apk" download="vibentra.apk" class="btn btn-apk btn-full">
-                <i class="fa-brands fa-android"></i> Download APK (112 MB)
+                <i class="fa-brands fa-android"></i> Download APK (99 MB)
             </a>
             <a href="https://github.com/srivatsan2007/Vibentra" target="_blank" rel="noopener noreferrer"
                 class="btn btn-github btn-full">
@@ -125,7 +125,7 @@
                 <div class="version-badge border-beam-badge">
                     <span class="badge-pulse"></span>
                     <i class="fa-solid fa-bolt-lightning text-cyan"></i>
-                    <span>Vibentra v1.30 Stable Release</span>
+                    <span>Vibentra v1.4.2 Stable Release</span>
                 </div>
 
                 <h1 class="hero-title">
@@ -135,8 +135,8 @@
 
                 <p class="hero-subtitle">
                     Vibentra is a next-generation high-fidelity music streaming ecosystem. Engineered with 
-                    <strong>100% Real Live Tracks</strong>, <strong>Permanent Cloud Sync Guard</strong>, 
-                    <strong>10-Band Graphic Equalizer</strong>, <strong>Sleep Timer Automation</strong>, and zero-stutter native background playback.
+                    <strong>100% Real Live Tracks</strong>, <strong>10-Band Graphic Equalizer</strong>, 
+                    <strong>Native Android Home Widgets</strong>, <strong>AI Multilingual Lyrics</strong>, and zero-stutter native background playback.
                 </p>
 
                 <div class="hero-buttons">
@@ -146,9 +146,15 @@
                         <span>Launch Live Web App</span>
                     </a>
 
-                    <a href="vibentra.apk" download="vibentra.apk" class="btn btn-hero-apk">
-                        <i class="fa-brands fa-android"></i>
-                        <span>Download APK (112 MB)</span>
+                    <a href="vibentra.apk" download="vibentra.apk" class="btn btn-hero-apk" id="heroApkBtn">
+                        <div class="btn-hero-apk-content">
+                            <i class="fa-brands fa-android"></i>
+                            <span id="heroApkText">Download APK (99 MB)</span>
+                            <span class="auto-timer-badge" id="autoTimerBadge">
+                                <i class="fa-solid fa-clock-rotate-left"></i> Auto in <b id="countdownSec">10</b>s
+                            </span>
+                        </div>
+                        <div class="auto-download-fill" id="autoDownloadFill"></div>
                     </a>
 
                     <a href="https://github.com/srivatsan2007/Vibentra" target="_blank" rel="noopener noreferrer"
@@ -160,12 +166,12 @@
 
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number count-up" data-target="1.30" data-prefix="v" data-decimals="2">v1.30</span>
+                        <span class="stat-number count-up" data-target="1.42" data-prefix="v" data-decimals="2">v1.42</span>
                         <span class="stat-label">Stable Release</span>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat-item">
-                        <span class="stat-number count-up" data-target="112.4" data-suffix=" MB" data-decimals="1">112.4 MB</span>
+                        <span class="stat-number count-up" data-target="98.8" data-suffix=" MB" data-decimals="1">98.8 MB</span>
                         <span class="stat-label">Android APK</span>
                     </div>
                     <div class="stat-divider"></div>
@@ -270,7 +276,7 @@
                         <div class="dsp-mockup-inner" id="playerDspView" style="display: none;">
                             <div class="dsp-header-row">
                                 <div class="dsp-title-wrap">
-                                    <span class="dsp-badge"><i class="fa-solid fa-sliders text-cyan"></i> DSP STUDIO v1.30</span>
+                                    <span class="dsp-badge"><i class="fa-solid fa-sliders text-cyan"></i> DSP STUDIO v1.4.2</span>
                                     <h4>Graphic Equalizer & Acoustic Shaping</h4>
                                 </div>
                                 <span class="dsp-status"><span class="badge-live-pulse"></span>ACTIVE</span>
@@ -324,9 +330,9 @@
     <section class="features-section" id="features">
         <div class="section-container">
             <div class="section-header text-center">
-                <span class="section-tag"><i class="fa-solid fa-microchip"></i> INNOVATION SUITE v1.30</span>
+                <span class="section-tag"><i class="fa-solid fa-microchip"></i> INNOVATION SUITE v1.4.2</span>
                 <h2>Engineered for Audiophiles & Next-Gen Streaming</h2>
-                <p>Designed with liquid glass aesthetics, real-time cloud guard, native background audio services, and high-fidelity 10-band DSP processing.</p>
+                <p>Designed with liquid glass aesthetics, native Android home widgets, real-time cloud guard, and studio-grade 10-band DSP processing.</p>
             </div>
 
             <div class="features-bento">
@@ -339,7 +345,7 @@
                             </div>
                             <div class="bento-badge-group">
                                 <span class="bento-cdn-chip"><span class="badge-live-pulse"></span>18ms CDN RESOLVER</span>
-                                <span class="feature-pill">NEW in v1.30</span>
+                                <span class="feature-pill">NEW in v1.4.2</span>
                             </div>
                         </div>
                         <h3>100% Real Live Tracks Engine</h3>
@@ -366,20 +372,52 @@
                     </div>
                 </div>
 
-                <!-- Bento 2: Permanent Playlist Deletion & Cloud Guard -->
-                <div class="bento-card glass-card tilt-card">
+                <!-- Bento 2: Native Android Home Widgets Studio (Wide Showcase) -->
+                <div class="bento-card bento-wide glass-card tilt-card border-beam-card">
                     <div class="bento-inner">
                         <div class="feature-header">
-                            <div class="feature-icon icon-teal">
-                                <i class="fa-solid fa-shield-halved"></i>
+                            <div class="feature-icon icon-blue">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
-                            <span class="feature-pill">NEW in v1.30</span>
+                            <div class="bento-badge-group">
+                                <span class="feature-pill">NATIVE ANDROID</span>
+                                <span class="feature-pill">NEW in v1.4.2</span>
+                            </div>
                         </div>
-                        <h3>Permanent Deletion & Cloud Guard</h3>
-                        <p>Once you delete a playlist, its ID is permanently blacklisted locally and purged in Firebase Cloud Firestore. Realtime snapshots will never resurrect deleted playlists.</p>
-                        <div class="bento-shield-badge">
-                            <i class="fa-solid fa-lock text-teal"></i>
-                            <span>Blacklist Guard: Zero Zombie Playlists</span>
+                        <h3>Android Home Widgets Studio</h3>
+                        <p>Control your vibes straight from your phone home screen without opening the app. Featuring the interactive Vinyl Turntable widget and large Hero Music Player widget.</p>
+                        
+                        <!-- Mini Android Widget Interactive Mockup -->
+                        <div class="widget-preview-grid">
+                            <div class="widget-preview-card">
+                                <span class="widget-card-tag"><i class="fa-solid fa-compact-disc"></i> Turntable Vinyl Widget</span>
+                                <div class="widget-mock-content">
+                                    <div class="widget-mini-disc spinning"></div>
+                                    <div class="widget-mini-meta">
+                                        <strong>Bloody Sweet</strong>
+                                        <span>33⅓ RPM Spin</span>
+                                        <div class="widget-mini-btns">
+                                            <button class="widget-mini-btn" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+                                            <button class="widget-mini-btn" title="Play/Pause"><i class="fa-solid fa-pause"></i></button>
+                                            <button class="widget-mini-btn" title="Next"><i class="fa-solid fa-forward-step"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-preview-card">
+                                <span class="widget-card-tag"><i class="fa-solid fa-music"></i> Hero Player Widget</span>
+                                <div class="widget-mock-content">
+                                    <div class="widget-mini-meta">
+                                        <strong>Fear Song (Devara)</strong>
+                                        <span>Anirudh Ravichander • 320kbps</span>
+                                        <div class="widget-mini-btns">
+                                            <button class="widget-mini-btn" title="Heart"><i class="fa-solid fa-heart text-pink"></i></button>
+                                            <button class="widget-mini-btn" title="Play"><i class="fa-solid fa-play"></i></button>
+                                            <button class="widget-mini-btn" title="Forward"><i class="fa-solid fa-forward-step"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -403,20 +441,24 @@
                     </div>
                 </div>
 
-                <!-- Bento 4: Screen-OFF Persistence -->
+                <!-- Bento 4: AI Multilingual Lyrics Translation -->
                 <div class="bento-card glass-card tilt-card">
                     <div class="bento-inner">
                         <div class="feature-header">
-                            <div class="feature-icon icon-emerald">
-                                <i class="fa-solid fa-circle-play"></i>
+                            <div class="feature-icon icon-teal">
+                                <i class="fa-solid fa-language"></i>
                             </div>
-                            <span class="feature-pill">Android Service</span>
+                            <span class="feature-pill">AI Engine</span>
                         </div>
-                        <h3>Screen-OFF Keep-Alive</h3>
-                        <p>Native Capacitor Foreground Service, notification drawer playback controllers, and WebAudio keep-alive thread ensuring uninterrupted music when locked.</p>
-                        <div class="bento-notification-mock">
-                            <i class="fa-brands fa-android text-emerald"></i>
-                            <span>Vibentra Native MediaService • Running</span>
+                        <h3>Multilingual Lyrics Translation</h3>
+                        <p>Real-time AI translation of synced live lyrics across 7 languages directly inside the full-screen player view.</p>
+                        <div class="lyrics-lang-chips">
+                            <span class="lang-chip active">English</span>
+                            <span class="lang-chip active">Tamil தமிழ்</span>
+                            <span class="lang-chip">Hindi हिंदी</span>
+                            <span class="lang-chip">Español</span>
+                            <span class="lang-chip">Français</span>
+                            <span class="lang-chip">日本語</span>
                         </div>
                     </div>
                 </div>
@@ -431,7 +473,7 @@
                             <span class="feature-pill">Analog Audio</span>
                         </div>
                         <h3>Vinyl Turntable Studio (33⅓ & 45 RPM)</h3>
-                        <p>Interactive rotating vinyl disc with fluid tonearm needle animations, quartz lock pitch display, ambient record reflection glow, and high-res album label centering.</p>
+                        <p>Interactive rotating vinyl disc with fluid tonearm needle animations, quartz lock pitch display, ambient record reflection glow, and lossless ringtone trimmer.</p>
                         <div class="bento-turntable-preview">
                             <span class="rpm-chip"><i class="fa-solid fa-rotate"></i> 33⅓ Standard</span>
                             <span class="rpm-chip active"><i class="fa-solid fa-bolt text-cyan"></i> 45 RPM Club Mode</span>
@@ -440,17 +482,21 @@
                     </div>
                 </div>
 
-                <!-- Bento 6: Mobile Playlist & Track Controls -->
+                <!-- Bento 6: Smart Call Focus & Auto-Resume -->
                 <div class="bento-card glass-card tilt-card">
                     <div class="bento-inner">
                         <div class="feature-header">
-                            <div class="feature-icon icon-blue">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div class="feature-icon icon-emerald">
+                                <i class="fa-solid fa-phone-volume"></i>
                             </div>
-                            <span class="feature-pill">Mobile UI</span>
+                            <span class="feature-pill">Audio Focus</span>
                         </div>
-                        <h3>Mobile Track Controls</h3>
-                        <p>Dedicated touch-friendly action buttons. Delete playlists with 1-tap from list rows or grid cards, and remove individual songs directly inside playlist detail views.</p>
+                        <h3>Smart Call Focus & Auto-Resume</h3>
+                        <p>Detects phone calls via Android TelephonyManager. Zero sound bleed: instantly mutes music during calls, and smoothly resumes where you left off when you hang up.</p>
+                        <div class="bento-notification-mock">
+                            <i class="fa-solid fa-check-double text-emerald"></i>
+                            <span>Zero Sound Bleed • Smooth Auto-Resume</span>
+                        </div>
                     </div>
                 </div>
 
@@ -468,31 +514,35 @@
                     </div>
                 </div>
 
-                <!-- Bento 8: AI DJ & Smart Queue -->
+                <!-- Bento 8: Battery Saver & OLED True-Black -->
                 <div class="bento-card glass-card tilt-card">
                     <div class="bento-inner">
                         <div class="feature-header">
                             <div class="feature-icon icon-amber">
-                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <i class="fa-solid fa-battery-half"></i>
                             </div>
-                            <span class="feature-pill">AI Core</span>
+                            <span class="feature-pill">Battery Lab</span>
                         </div>
-                        <h3>AI DJ & Smart Queue</h3>
-                        <p>Dynamic acoustic queue generation based on mood, tempo, and harmonic keys with real-time multilingual lyric translation.</p>
+                        <h3>Battery Saver & OLED Mode</h3>
+                        <p>1-tap battery saver halts continuous GPU blurs and switches to pure OLED true-black, complete with real-time device battery diagnostics.</p>
                     </div>
                 </div>
 
-                <!-- Bento 9: Incognito Mode & Storage Sync -->
+                <!-- Bento 9: Permanent Playlist Deletion & Cloud Guard -->
                 <div class="bento-card glass-card tilt-card">
                     <div class="bento-inner">
                         <div class="feature-header">
-                            <div class="feature-icon icon-lime">
-                                <i class="fa-solid fa-user-secret"></i>
+                            <div class="feature-icon icon-teal">
+                                <i class="fa-solid fa-shield-halved"></i>
                             </div>
-                            <span class="feature-pill">Privacy Vault</span>
+                            <span class="feature-pill">Security</span>
                         </div>
-                        <h3>Incognito & Cloud Sync</h3>
-                        <p>Temporary private listening sessions with zero history recording, instant cache wiping, and 1-tap JSON cloud data backups.</p>
+                        <h3>Permanent Deletion & Cloud Guard</h3>
+                        <p>Deleted playlist IDs are permanently blacklisted locally and purged in Firebase Cloud Firestore. Zero zombie playlists resurrecting on cloud sync.</p>
+                        <div class="bento-shield-badge">
+                            <i class="fa-solid fa-lock text-teal"></i>
+                            <span>Blacklist Guard: Zero Zombie Playlists</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -668,7 +718,7 @@
                             <span class="lbl">Open Source</span>
                         </div>
                         <div class="dev-stat">
-                            <span class="num count-up" data-target="1.30" data-prefix="v" data-decimals="2">v1.30</span>
+                            <span class="num count-up" data-target="1.42" data-prefix="v" data-decimals="2">v1.42</span>
                             <span class="lbl">Latest Build</span>
                         </div>
                         <div class="dev-stat">
@@ -718,7 +768,7 @@
                         <i class="fa-solid fa-chevron-down faq-chevron"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>In version 1.30, every single album and playlist connects directly to live provider endpoints (JioSaavn and YouTube Music). When you open an album or curated playlist, Vibentra fetches its authentic tracklist instead of duplicate sample songs.</p>
+                        <p>In version 1.4.2, every single album and playlist connects directly to live provider endpoints (JioSaavn and YouTube Music). When you open an album or curated playlist, Vibentra fetches its authentic tracklist instead of duplicate sample songs.</p>
                     </div>
                 </div>
 
@@ -758,7 +808,7 @@
                 <!-- FAQ 6 -->
                 <div class="faq-card glass-card">
                     <button class="faq-question">
-                        <span class="faq-title"><i class="fa-solid fa-download text-emerald"></i> How do I install the latest Android APK (112 MB)?</span>
+                        <span class="faq-title"><i class="fa-solid fa-download text-emerald"></i> How do I install the latest Android APK (99 MB)?</span>
                         <i class="fa-solid fa-chevron-down faq-chevron"></i>
                     </button>
                     <div class="faq-answer">
@@ -776,12 +826,12 @@
                 <div class="release-header">
                     <div>
                         <span class="release-status"><i class="fa-solid fa-circle-check text-cyan"></i> LATEST STABLE RELEASE</span>
-                        <h2 class="release-title">Vibentra v1.30</h2>
-                        <p class="release-date"><i class="fa-regular fa-calendar"></i> September 2026 • Build 2026.09 (v1.30-stable)</p>
+                        <h2 class="release-title">Vibentra v1.4.2</h2>
+                        <p class="release-date"><i class="fa-regular fa-calendar"></i> October 2026 • Build 2026.10 (v1.4.2-stable)</p>
                     </div>
                     <div class="release-actions">
                         <a href="vibentra.apk" download="vibentra.apk" class="btn btn-primary glow-btn">
-                            <i class="fa-brands fa-android"></i> Download APK (112 MB)
+                            <i class="fa-brands fa-android"></i> Download APK (99 MB)
                         </a>
                         <a href="https://vibentra.vercel.app/" target="_blank" rel="noopener noreferrer"
                             class="btn btn-github">
@@ -791,34 +841,48 @@
                 </div>
 
                 <div class="release-changelog">
-                    <h4>v1.30 Milestone Highlights:</h4>
+                    <h4>v1.4.2 Milestone Highlights:</h4>
                     <div class="changelog-grid">
                         <div class="changelog-item">
                             <i class="fa-solid fa-tower-broadcast text-cyan"></i>
                             <div>
                                 <strong>100% Real Live Tracks</strong>
-                                <p>Authentic tracklists for all albums and playlists directly from JioSaavn and YouTube stream resolvers.</p>
+                                <p>Authentic tracklists for all albums and playlists directly from JioSaavn and YouTube stream resolvers in 320kbps HQ.</p>
                             </div>
                         </div>
                         <div class="changelog-item">
-                            <i class="fa-solid fa-shield-halved text-teal"></i>
+                            <i class="fa-solid fa-mobile-screen-button text-blue"></i>
                             <div>
-                                <strong>Permanent Playlist Deletion & Cloud Guard</strong>
-                                <p>Deleted playlists are permanently blacklisted and purged from Firestore, guaranteeing they never resurrect.</p>
+                                <strong>Android Home Widgets Studio</strong>
+                                <p>Interactive Vinyl Turntable widget and Hero Music Player widget with live playback controls on your home screen.</p>
                             </div>
                         </div>
                         <div class="changelog-item">
-                            <i class="fa-solid fa-mobile-screen text-blue"></i>
+                            <i class="fa-solid fa-language text-teal"></i>
                             <div>
-                                <strong>Mobile Playlist & Track Removal</strong>
-                                <p>Dedicated 1-tap delete controls on mobile list rows, grid cards, and detailed playlist screens.</p>
+                                <strong>AI Real-Time Lyrics Translation</strong>
+                                <p>Instant multilingual translation into English, Tamil, Hindi, Spanish, French, German, and Japanese.</p>
+                            </div>
+                        </div>
+                        <div class="changelog-item">
+                            <i class="fa-solid fa-phone-volume text-emerald"></i>
+                            <div>
+                                <strong>Smart Call Interruption Focus</strong>
+                                <p>Automatically silences audio during incoming calls and seamlessly auto-resumes playback the moment the call ends.</p>
                             </div>
                         </div>
                         <div class="changelog-item">
                             <i class="fa-solid fa-sliders text-purple"></i>
                             <div>
-                                <strong>Sound & DSP Studio + Sleep Timer</strong>
-                                <p>10-Band Graphic Equalizer, bass boost (+15 dB), 3D spatializer, and 30-second volume fade-out sleep timer.</p>
+                                <strong>10-Band DSP Studio & Sleep Fade</strong>
+                                <p>Studio Graphic EQ, +15dB Sub-Bass boost, 3D spatializer, pitch lock, and smooth 30-second volume fade-out sleep timer.</p>
+                            </div>
+                        </div>
+                        <div class="changelog-item">
+                            <i class="fa-solid fa-battery-half text-amber"></i>
+                            <div>
+                                <strong>Battery Saver & OLED True-Black</strong>
+                                <p>1-tap battery saver mode with real-time battery diagnostics and OLED true-black styling for extended battery life.</p>
                             </div>
                         </div>
                     </div>
@@ -844,7 +908,7 @@
                 <a href="https://github.com/srivatsan2007/Vibentra" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-github"></i> GitHub Repository</a>
                 <a href="vibentra.apk" download="vibentra.apk"><i class="fa-brands fa-android"></i>
-                    Android APK (112 MB)</a>
+                    Android APK (99 MB)</a>
             </div>
 
             <div class="footer-copyright">
@@ -861,6 +925,31 @@
         </svg>
         <i class="fa-solid fa-arrow-up"></i>
     </button>
+
+    <!-- Floating Auto-Download Countdown Toast Banner -->
+    <div class="auto-download-banner" id="autoDownloadBanner">
+        <div class="banner-inner">
+            <div class="banner-spinner">
+                <svg class="banner-ring" width="44" height="44" viewBox="0 0 44 44">
+                    <circle class="banner-ring-bg" cx="22" cy="22" r="18" stroke="rgba(149, 233, 233, 0.2)" stroke-width="3" fill="transparent"/>
+                    <circle class="banner-ring-fill" id="bannerRingFill" cx="22" cy="22" r="18" stroke="#95E9E9" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="0" fill="transparent"/>
+                </svg>
+                <span class="banner-sec" id="bannerSec">10s</span>
+            </div>
+            <div class="banner-info">
+                <div class="banner-title"><i class="fa-solid fa-bolt text-cyan"></i> Automatic APK Download (v1.4.2)</div>
+                <p class="banner-sub" id="bannerSubText"><code>vibentra.apk</code> (99 MB) will start downloading in <b id="bannerCount">10</b> seconds.</p>
+            </div>
+            <div class="banner-buttons">
+                <button class="btn btn-primary btn-sm glow-btn" id="bannerDownloadNowBtn">
+                    <i class="fa-solid fa-download"></i> Download Now
+                </button>
+                <button class="banner-cancel-btn" id="bannerCancelBtn" title="Cancel automatic download">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Custom Portfolio Interactive JS -->
     <script src="./script.js"></script>
